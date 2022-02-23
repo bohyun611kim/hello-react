@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const MyComponent = (props) => {
     console.log(props);
@@ -15,8 +16,11 @@ const MyComponent = (props) => {
 // 기본값 설정
 MyComponent.defaultProps = {
     name: '기본이름',
-    age: 12,
-    sex: 'man',
+};
+
+MyComponent.propTypes = {
+    name: PropTypes.string,
+    favoriteNumber: PropTypes.number.isRequired,
 };
 
 export default MyComponent;
