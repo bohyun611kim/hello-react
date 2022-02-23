@@ -4,7 +4,9 @@ import MyComponent from './MyComponent';
 function App() {
     return (
         <>
-            <MyComponent>자식 리액트 </MyComponent>
+            <MyComponent name="react hello!" favoriteNumber={123}>
+                자식 리액트
+            </MyComponent>
         </>
     );
 }

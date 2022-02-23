@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 
 const MyComponent = (props) => {
     console.log(props);
-    const { name, children, age, sex } = props;
+    const { name, children, favoriteNumber } = props;
     return (
         <div>
-            my name is {name} <br />
-            nickname is {children} <br />
-            단비 : {age} 이고 {sex}
+            <h1> my name is {name} </h1>
+            <br />
+            <p>가장 좋아하는 숫자는 {favoriteNumber} 입니다</p>
         </div>
     );
 };
