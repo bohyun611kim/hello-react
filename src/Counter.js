@@ -8,7 +8,7 @@ class Counter extends Component {
     };
 
     render() {
-        console.log(this.state);
+        //console.log(this.state);
         const { number, fixedNumber } = this.state;
         return (
             <div>
@@ -16,10 +16,9 @@ class Counter extends Component {
                 <h2>바뀌지않는 값: {fixedNumber}</h2>
                 <button
                     onClick={() => {
-                        this.setState((prevState) => {
-                            return {
-                                number: prevState.number + 1,
-                            };
+                        this.setState({ number: number + 1 }, () => {
+                            console.log(this.state);
+                            console.log('호출...');
                         });
                     }}
                 >
