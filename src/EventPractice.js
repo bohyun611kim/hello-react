@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 
 class EventPractice extends Component {
+    // 상태값 설정
+    state = {
+        messsage: '',
+    };
     render() {
         return (
             <div>
@@ -8,11 +12,13 @@ class EventPractice extends Component {
                 <input
                     type="text"
                     name="message"
-                    placeholder="아무거나"
+                    placeholder="이메일을 넣으세요"
+                    value={this.state.messsage}
                     onChange={(e) => {
-                        console.log(e.target.value);
+                        this.setState({ messsage: e.target.value });
                     }}
                 />
+                <h1>{this.messsage}</h1>
             </div>
         );
     }
