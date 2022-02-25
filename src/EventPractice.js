@@ -15,10 +15,20 @@ class EventPractice extends Component {
                     placeholder="이메일을 넣으세요"
                     value={this.state.messsage}
                     onChange={(e) => {
+                        console.log(e.target.value);
                         this.setState({ messsage: e.target.value });
                     }}
                 />
-                <h1>{this.messsage}</h1>
+                <button
+                    onClick={() => {
+                        alert(this.state.messsage);
+                        this.setState({
+                            messsage: '',
+                        });
+                    }}
+                >
+                    확인
+                </button>
             </div>
         );
     }
