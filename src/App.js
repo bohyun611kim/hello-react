@@ -1,12 +1,7 @@
 import React from 'react';
-import Counter from './Counter';
-import MyComponent from './MyComponent';
+import EventPractice from './EventPractice';
 
 function App() {
-    return (
-        <>
-            <Counter />
-        </>
-    );
+    return <EventPractice />;
 }
 export default App;
