@@ -10,18 +10,26 @@ class Counter extends Component {
     }
 
     render() {
+        console.log(this.state);
         const { number } = this.state;
         return (
             <div>
                 <h1>STATE DEMO </h1>
                 <h1>{number}</h1>
                 <button
-                    // 이벤트
                     onClick={() => {
                         this.setState({ number: number + 1 });
                     }}
                 >
-                    +1
+                    <span>+1</span>
+                </button>
+
+                <button
+                    onClick={() => {
+                        this.setState({ number: number - 1 });
+                    }}
+                >
+                    <span>-1</span>
                 </button>
             </div>
         );
