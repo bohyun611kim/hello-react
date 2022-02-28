@@ -1,12 +1,9 @@
-import React from 'react';
-import Counter from './Counter';
-import MyComponent from './MyComponent';
+import React, { Component } from 'react';
+import IterationSample from './IterationSample';
 
-function App() {
-    return (
-        <>
-            <Counter />
-        </>
-    );
+class App extends Component {
+    render() {
+        return <IterationSample />;
+    }
 }
 export default App;
