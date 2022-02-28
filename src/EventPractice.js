@@ -6,25 +6,18 @@ class EventPractice extends Component {
         messsage: '',
     };
 
-    // 생성자 가독성을 높여보기
-    constructor(props) {
-        super(props);
-        this.handleChange = this.handleChange.bind(this);
-        this.handleClick = this.handleClick.bind(this);
-    }
-
     // 핸들러
-    handleChange(e) {
+    handleChange = (e) => {
         console.log(e.target.value);
         this.setState({
             messsage: e.target.value,
         });
-    }
+    };
 
-    handleClick() {
+    handleClick = () => {
         alert(this.state.messsage);
         this.setState({ messsage: '' });
-    }
+    };
 
     render() {
         return (
