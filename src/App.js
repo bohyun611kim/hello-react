@@ -1,7 +1,7 @@
 import React from 'react';
-import EventPracticeFunc from './EventPracticeFunc';
+import ValidationSample from './ValidationSample';
 
 function App() {
-    return <EventPracticeFunc />;
+    return <ValidationSample />;
 }
 export default App;
