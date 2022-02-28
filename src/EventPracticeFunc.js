@@ -21,6 +21,7 @@ const EventPracticeFunc = () => {
             onClick();
         }
     };
+
     const onClick = () => {
         alert(username + ' : ' + messsage);
         setForm({
