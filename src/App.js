@@ -1,7 +1,7 @@
 import React from 'react';
-import ValidationSample from './ValidationSample';
+import RefSample from './RefSample';
 
 function App() {
-    return <ValidationSample />;
+    return <RefSample />;
 }
 export default App;

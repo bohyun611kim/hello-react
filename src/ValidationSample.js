@@ -26,7 +26,7 @@ class ValidationSample extends Component {
         return (
             <div>
                 <h1>welcome!</h1>
-                <input type="password" value={password} onChange={this.handlechange} className={this.state.clicked ? (this.state.validated ? 'success' : 'failure') : ''}></input>
+                <input type="password" value={this.state.password} onChange={this.handlechange} className={this.state.clicked ? (this.state.validated ? 'success' : 'failure') : ''}></input>
                 <button onClick={this.handelButtonClick}>검증하기 </button>
             </div>
         );
